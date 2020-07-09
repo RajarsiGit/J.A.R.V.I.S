@@ -68,9 +68,8 @@ def sendEmail(to, content):
 
 
 if __name__ == '__main__':
-    chrome_path = 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
-    webbrowser.register(
-        'chrome', None, webbrowser.BackgroundBrowser(chrome_path))
+    chrome_path = 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe'
+    webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
     wishMe()
     while True:
         query = takeCommand().lower()

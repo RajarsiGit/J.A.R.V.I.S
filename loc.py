@@ -16,9 +16,7 @@ def speak(audio):
 
 
 def weather():
-    api_url = "https://fcc-weather-api.glitch.me/api/current?lat=" + \
-        str(g.latlng[0]) + "&lon=" + str(g.latlng[1])
-
+    api_url = "https://fcc-weather-api.glitch.me/api/current?lat=" + str(g.latlng[0]) + "&lon=" + str(g.latlng[1])
     data = requests.get(api_url)
     data_json = data.json()
     if data_json['cod'] == 200:

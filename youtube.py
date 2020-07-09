@@ -3,9 +3,8 @@ import urllib.parse
 import re
 from bs4 import BeautifulSoup
 import webbrowser
-chrome_path = 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
-webbrowser.register(
-    'chrome', None, webbrowser.BackgroundBrowser(chrome_path))
+chrome_path = 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe'
+webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
 
 
 def you(textToSearch):
@@ -19,8 +18,7 @@ def you(textToSearch):
     #search_results=re.findall('href=\"\\/watch\\?v=(.{11})', html.decode())
     #print(search_results)
     #webbrowser.get('chrome').open_new_tab('http://youtube.com/watch?v=' + search_results[0])
-    
 
 
 if __name__ == '__main__':
-    you('any text')
+    you('Bandeh')
